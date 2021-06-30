@@ -167,9 +167,12 @@
 
                 <div class="contact__container bd-grid">
                     <form action="https://formsubmit.co/bd0ef9ca44bbaeb7319a4f9c4d0deffa" method="POST" class="contact__form">
-                        <input type="text" name="name" required>
-                        <input type="email" name="email" required>
-                        <button type="submit">Enviar</button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="name" placeholder="Nombre" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>                        
+                        <textarea name="message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="submit" class="contact__button button">Enviar</button>
+                        <input type="hidden" name="_autoresponse" value="Ya recibimos tu mensaje, en breve te responderemos!">
                                     <!--===== CONTACT 
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
